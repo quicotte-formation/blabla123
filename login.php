@@ -1,7 +1,7 @@
 <body>
     <a href="film_ajouter.php"><center>Ajouter Film</center></a>
     <br>
-    <form action="login.php" method="post"
+    <form action="login_post.php" method="post"
         <label><h1>Menu Utilisateur</h1></label>
         <br>
         <br>
@@ -10,7 +10,7 @@
         <textarea name="identifiant"></textarea>
         <br>
         <label>Mot de passe : </label>
-        <textarea name="mpd"></textarea>
+        <input name="mdp" type="password">
         <center><input type="submit" value="Valider"/></center>
     </form>
 </body>

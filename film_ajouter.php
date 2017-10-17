@@ -1,7 +1,7 @@
 <body>
     <a href="login.php"><center>Menu connexion</center></a>
     <br>
-    <form action="film_ajouter.php" method="post"
+    <form action="film_ajouterPOST.php" method="post"
         <label><h1>Nouveau Film</h1></label>
         <br>
         <br>
