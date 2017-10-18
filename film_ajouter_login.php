@@ -6,6 +6,13 @@
         <br>
         <br>
         <br>
+        <label>Login :</label>
+        <textarea name="identifiant"></textarea>
+        <br>
+        <label>Mot de passe : </label>
+        <input name="mdp" type="password">
+        <br>
+        <br>
         <label>Titre :</label>
         <textarea name="title"></textarea>
         <br>
