@@ -1,6 +1,8 @@
 
 
 <?php
+include './LIB/db.php';
+session_start();
 
 /* 
  * To change this license header, choose License Headers in Project Properties.
@@ -9,12 +11,23 @@
  */
 
 //var_dump ($_REQUEST);
+$logins=rechercheUtilParLoginMdp($_REQUEST["identifiant"],$_REQUEST["mdp"]);
+//var_dump($logins);
 
-if ($_REQUEST["identifiant"] == "admin" and $_REQUEST["mdp"]=="admin")
-{
-    echo "Welcome Admin";
+if (count($logins)>=1){ //try isset?
+    echo "Login granted";
+    $_SESSION["loginUtilConnecte"]=$_REQUEST["identifiant"];
+    header("Location: film_list.php");
+    exit;
+}else{
+    echo 'Login refusé';
 }
-else
-{
-    echo "Connexion refusée";
-}
+
+//if ($_REQUEST["identifiant"] == "admin" and $_REQUEST["mdp"]=="admin")
+//{
+//    echo "Welcome Admin";
+//}
+//else
+//{
+//    echo "Connexion refusée";
+//}

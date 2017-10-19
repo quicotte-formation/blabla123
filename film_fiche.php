@@ -1,4 +1,5 @@
 <?php
+include './_menu.php' ;
 $fiche = [
         "titre"=>"Dracula",
         "anneeProd"=>2001,

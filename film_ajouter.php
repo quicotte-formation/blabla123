@@ -1,5 +1,6 @@
 <body>
-    <a href="login.php"><center>Menu connexion</center></a>
+    <!--<a href="login.php"><center>Menu connexion</center></a>-->
+       <?php include './_menu.php' ?>;
     <br>
     <form action="add_entry.php" method="post"
           <label><h1>Nouveau Film</h1></label>

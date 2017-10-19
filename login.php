@@ -1,13 +1,15 @@
 <body>
-    <a href="film_ajouter.php"><center>Ajouter Film</center></a>
+    <!--<a href="film_ajouter.php"><center>Ajouter Film</center></a>-->
+    <?php include './_menu.php' ?>;
     <br>
-    <form action="login_post.php" method="post"
-        <label><h1>Menu Utilisateur</h1></label>
+    <h1>Menu Utilisateur</h1>
+    <form action="login_post.php" method="post">
+        
         <br>
         <br>
         <br>
         <label>Login :</label>
-        <textarea name="identifiant"></textarea>
+        <input name="identifiant"/>
         <br>
         <label>Mot de passe : </label>
         <input name="mdp" type="password">

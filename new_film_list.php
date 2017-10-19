@@ -1,8 +1,8 @@
 <?php
 
 include("..")
-$films=["mon ange","les sous doues","tain de karma"]
-lister()
+//$films=["mon ange","les sous doues","tain de karma"]
+//lister()
 ?>
 
 <!DOCTYPE html>;

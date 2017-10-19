@@ -1,10 +1,9 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+function rechercheUtilParLoginMdp($login, $mdp) {
+    $pdo = dbConnexion();
+    return $pdo->query("SELECT * FROM util WHERE login='$login' AND mdp='$mdp'")->fetchAll(); 
+}
 
 //definir 2 constantes car on va utiliser partout pour connexions
 define("DB_CHAINE_CONNEXION", "mysql:host=localhost;dbname=streaming");

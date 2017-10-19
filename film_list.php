@@ -20,6 +20,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+           <?php include './_menu.php' ?>;
         <h1>Liste des films</h1>
         <table>
             <caption>Films</caption>
